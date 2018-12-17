@@ -1,0 +1,53 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+#model{
+  background-color: #ffffff;
+  color: #000000;
+  margin: 100px auto;
+  max-width: 600px;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name:modelopen;
+  animation-duration: 1s;
+}
+#model .modelHeader {
+  background-color: #f17171;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+#model .modelHeader h3 {
+  display: inline;
+}
+#model .modelHeader a {
+  float: right;
+  text-decoration: none;
+}
+#model .modelHeader a:hover {
+  color: #ffffff;
+}
+#model .modelContent {
+  padding: 20px 8px;
+  line-height: 1.7em;
+}
+#model .modelFooter {
+  background-color: #f77777;
+  color:#ffffff;
+  padding: 8px 20px;
+}
+#model .modelFooter p {
+  padding: 0;
+  margin: 0;
+}
+@keyframes modelopen {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
